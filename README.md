@@ -7,11 +7,11 @@
 
 <div style="display: flex; justify-content: space-between; margin: 20px 0;">
   <div style="flex: 1; margin-right: 10px;">
-    <img src="Images/response.png" alt="AI Response Generation" width="400"/>
+    <img src="Images/Response.png" alt="AI Response Generation" width="400"/>
     <p><em>AI-powered email generation in action</em></p>
   </div>
   <div style="flex: 1; margin-left: 10px;">
-    <img src="Images/result.png" alt="Campaign Results" width="400"/>
+    <img src="Images/Result.jpg" alt="Campaign Results" width="400"/>
     <p><em>Real-time campaign results and tracking</em></p>
   </div>
 </div>
