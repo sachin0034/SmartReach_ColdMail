@@ -29,12 +29,12 @@ else:
     form = st.form(key='input fields')
     product_description = form.text_area(label="What is the product description?",
                                          placeholder="Example Wireless Earbuds 2.0, Premium sound in a wire-free "
-                                                     "design. Rich audio, 8-hour battery, touch controls, "
+                                                     "design. Sachin, 8-hour battery, touch controls, "
                                                      "water-resistant. Charging case adds 24 hours. Perfect for "
                                                      "workouts or daily use. Available in black, white, navy.")
     personal_information = form.text_input(
         label="Please provide a name, position and name of company to be used as the addressed?",
-        placeholder="John Wokorach, Job Position, Company",
+        placeholder="Sachin Parmar, Job Position, Company",
         help="Separate the information using commas e.g Jordan, Software Developer, Remote Squad")
 
     subject_line = form.text_input(label="Enter a subject line for the email", )

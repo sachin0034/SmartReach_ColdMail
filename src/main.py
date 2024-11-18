@@ -32,6 +32,7 @@ def send_email(recipient, subject, body):
         session.sendmail(from_addr=USER_EMAIL, to_addrs=recipient, msg=body)
         session.send_message(msg=msg)
 
+# The ChatOpenAI model is used to generate the response, where Langchain takes care of chaining the template and model together, ensuring the output follows the defined structure.
 
 def generate_email_body(name, description, sender_information, product_description):
     prompt_template = """
@@ -61,6 +62,7 @@ def generate_email_body(name, description, sender_information, product_descripti
 
     llm = ChatOpenAI()
 
+    # making the chain
     chain = prompt | llm | StrOutputParser()
     response = chain.invoke(input={"product_description": product_description, "name": name, "description": description,
                                    "sender_information": sender_information})
